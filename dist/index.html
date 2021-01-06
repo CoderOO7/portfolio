@@ -6,17 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
-<body class="antialised">
-    <h1
-        class="font-bold text-3xl text-center max-w-2xl mx-auto mt-12 bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
-        If you see a beautiful gradient on this text, Tailwind CSS is
-        successfully installed and setup
-    </h1>
+<body class="antialiased text-gray-600">
+    <main class="min-h-screen">
+        <div class="absolute inset-0 min-h-screen">
+            <div class="absolute inset-0 h-1/2"
+                style="background:url('./assets/images/header-bg-img.webp') center no-repeat;background-size:cover">
+            </div>
+        </div>
+        <section class="flex justify-center items-center min-h-screen">
+            <div class="relative m-20">
+                <div
+                    class="absolute z-0 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-600 shadow-md transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-md">
+                </div>
+                <div class="relative z-12 md:flex align-items:center max-w-4xl bg-white p-12 rounded-md shadow-md">
+                    <div class="flex flex-col space-y-8 py-4">
+                        <div>
+                            <p class="text-lg">Hello, I am</p>
+                            <h1 class="text-5xl font-bold text-gray-800">
+                                CoderOO7
+                            </h1>
+                        </div>
+                        <p class="text-xl leading-relaxed">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quo veritatis assumenda
+                            repudiandae
+                            eligendi incidunt iure asperiores modi, consectetur quaerat? Aliquam eveniet possimus
+                            quaerat
+                            illum,
+                            velit optio corrupti voluptates repellat?
+                        </p>
+                        <div class="inline-flex space-x-4 text-xl">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </div>
+                    <img class="h-60 w-60 m-auto border-6 border-white rounded-full shadow-md flex-shrink-0"
+                        src="./assets/images/avatar.jpg" alt="avatar" />
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>
