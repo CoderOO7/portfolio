@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .bg-card{
+        @apply absolute z-0 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-600 shadow-md transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-md
+    }
+}
