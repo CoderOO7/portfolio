@@ -38,8 +38,8 @@
                             velit optio corrupti voluptates repellat?
                         </p>
                         <div class="inline-flex space-x-4 text-xl">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <ion-icon name="logo-twitter"></ion-icon>
+                            <a href="https://github.com/coderoo7/" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://twitter.com/coderoo7" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
                         </div>
                     </div>
                     <img class="h-60 w-60 m-auto border-6 border-white rounded-full shadow-md flex-shrink-0"
@@ -48,7 +48,7 @@
             </div>
         </section>
 
-        <section class="bg-gray-50 py-20 px-6">
+        <!-- <section class="bg-gray-50 py-20 px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center">
                     <h2 class="text-5xl text-gray-800 font-bold">Services</h2>
@@ -93,63 +93,122 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="bg-white-50 py-20 px-6 min-height-screen">
-            <div class="max-w-4xl mx-auto">
+        <section id="projects">
+            <div class="bg-white-50 py-20 px-6 min-height-screen max-w-4xl mx-auto">
                 <div class="text-center">
                     <h2 class="text-5xl text-gray-800 font-bold">Projects</h2>
-                    <p>Here's are my some projects</p>
+                    <p>Here are my some projects</p>
                 </div>
-                <div class="pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="rounded-md shadow-md lg:col-span-2">
-                        <img src="http://placecorgi.com/800" class="h-80 w-full" alt="">
-                        <div class="p-8">
+                <div class="pt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://coderoo7.github.io/todo-list/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/todo-list.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
                             <h3 class="text-2xl font-bold">Todo List</h3>
-                            <p class="leading-relaxed pt-4">Lorliem ipsum dolor sit amet consectetur adipisicing elit.
-                                Odio ad totam, quod ullam optio laboriosam nihil ea, quia similique id sequi assumenda,
-                                reprehenderit cum fugiat obcaecati enim pariatur iusto nemo.</p>
-                            <a href="#"
-                                class="inline-block mt-4 px-8 py-2 bg-gradient-to-r from-cyan-400 to-emerald-800 text-white shadow-md rounded-md font-bold">View
-                                more</a>
+                            <p class="leading-relaxed pt-4">A personal todolist web app with cloud support created
+                                using Vanilla JavaScript(ES6).This project is build by taking account of solid principles and design patterns
+                                for making code modular and reusable.
+                            </p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://coderoo7.github.io/todo-list/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/coderoo7/todo-list/" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="rounded-md shadow-md">
-                        <img src="http://placecorgi.com/800" class="h-80 w-full" alt="">
-                        <div class="p-8">
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://foodshaalaa.herokuapp.com/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/foodshala.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
                             <h3 class="text-2xl font-bold">Foodshala</h3>
-                            <p class="leading-relaxed pt-4">Lorliem ipsum dolor sit amet consectetur adipisicing elit.
-                                Odio ad totam, quod ullam optio laboriosam nihil ea, quia similique id sequi assumenda,
-                                reprehenderit cum fugiat obcaecati enim pariatur iusto nemo.</p>
-                            <a href="#"
-                                class="inline-block mt-4 px-8 py-2 bg-gradient-to-r from-cyan-400 to-emerald-800 text-white shadow-md rounded-md font-bold">View
-                                more</a>
+                            <p class="leading-relaxed pt-4">A restaurant web app portal that allow customers to order food from
+                                various restaurant stores and allow various restaurant store to sell their food items using this portal.
+                            </p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://foodshaalaa.herokuapp.com/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/coderoo7/foodshala" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="rounded-md shadow-md">
-                        <img src="http://placecorgi.com/800" class="h-80 w-full" alt="">
-                        <div class="p-8">
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://coderoo7.github.io/TicTacToe/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/tictactoe.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
                             <h3 class="text-2xl font-bold">TicTacToe</h3>
-                            <p class="leading-relaxed pt-4">Lorliem ipsum dolor sit amet consectetur adipisicing elit.
-                                Odio ad totam, quod ullam optio laboriosam nihil ea, quia similique id sequi assumenda,
-                                reprehenderit cum fugiat obcaecati enim pariatur iusto nemo.</p>
-                            <a href="#"
-                                class="inline-block mt-4 px-8 py-2 bg-gradient-to-r from-cyan-400 to-emerald-800 text-white shadow-md rounded-md font-bold">View
-                                more</a>
+                            <p class="leading-relaxed pt-4">An online TicTacToe(Noughts and Crosses) game with matrix look to give you some nerd
+                                feel, built using HTML5, CSS3, and JavaScript ES6.</p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://coderoo7.github.io/TicTacToe/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/CoderOO7/TicTacToe" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="rounded-md shadow-md lg:col-span-2">
-                        <img src="http://placecorgi.com/800" class="h-80 w-full" alt="">
-                        <div class="p-8">
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://coderoo7.github.io/Digital-library/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/digital-library.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
                             <h3 class="text-2xl font-bold">Digital Library</h3>
-                            <p class="leading-relaxed pt-4">Lorliem ipsum dolor sit amet consectetur adipisicing elit.
-                                Odio ad totam, quod ullam optio laboriosam nihil ea, quia similique id sequi assumenda,
-                                reprehenderit cum fugiat obcaecati enim pariatur iusto nemo.</p>
-                            <a href="#"
-                                class="inline-block mt-4 px-8 py-2 bg-gradient-to-r from-cyan-400 to-emerald-800 text-white shadow-md rounded-md font-bold">View
-                                more</a>
+                            <p class="leading-relaxed pt-4">It's a sample CRUD web app allow you to add your favourite books and movies online,
+                                built using HTML5, CSS3, Javascript ES6 and firebase as backend.</p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://coderoo7.github.io/Digital-library/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/CoderOO7/Digital-library" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
                         </div>
                     </div>
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://coderoo7.github.io/Calculator/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/calculator.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
+                            <h3 class="text-2xl font-bold">Calculator</h3>
+                            <p class="leading-relaxed pt-4">An online calculator with basic arithmetic features controlled by either the mouse or
+                                keyboard, built using HTML5, CSS3, and JavaScript ES6.</p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://coderoo7.github.io/Calculator/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/CoderOO7/Calculator" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__item rounded-md shadow-md">
+                        <a href="https://coderoo7.github.io/Etch-A-Sketch/" class="relative flex hover-trigger" target="_blank">
+                            <img src="./assets/images/etch-a-sketch.png" class="h-60 w-full" alt="">
+                            <div class="absolute opacity-0 flex justify-center items-center bg-black w-full h-full hover-target">
+                                <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                            </div>
+                        </a>
+                        <div class="p-8 border-t-2 border-grey-800">
+                            <h3 class="text-2xl font-bold">Etch-A-Sketch</h3>
+                            <p class="leading-relaxed pt-4">A simple sketch pad made using HTML5/CSS3, JavaScript(ES6) to improve
+                                DOM manipulation skills.
+                            </p>
+                            <div class="flex space-x-4 pt-4">
+                                <a href="https://coderoo7.github.io/Etch-A-Sketch/" target="_blank"><ion-icon name="link-outline" class="text-2xl"></ion-icon></a>
+                                <a href="https://github.com/CoderOO7/Etch-A-Sketch" target="_blank"><ion-icon name="logo-github" class="text-2xl"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
