@@ -5,7 +5,6 @@ const renderDOM = (() => {
     function list() {
       projectController.getProjects().forEach((project) => {
         const projectListEl = document.querySelector(".project-list");
-        console.log(project.imagePath);
         const projectListItem = document.createElement("li");
         projectListItem.classList.add("project-list-item");
         projectListItem.innerHTML = `
