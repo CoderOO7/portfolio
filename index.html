@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoderOO7 Portfolio</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
@@ -21,7 +21,7 @@
             <div class="relative">
                 <div class="bg-card">
                 </div>
-                <div class="relative z-12 md:flex justify-between max-w-4xl bg-white p-12 rounded-md shadow-md">
+                <div class="relative z-12 md:flex justify-between max-w-4xl bg-white p-4 rounded-md shadow-md">
                     <div class="flex flex-col space-y-8 py-4">
                         <header>
                             <p class="text-lg">Hi, I am</p>
@@ -33,8 +33,9 @@
                         <p class="text-xl leading-relaxed">I'm a developer, programmer and a self learner. I develope
                             quality websites with efficient design patterns and modular code.
                         </p>
-                        <code
-                            class="text-emerald-500">Reach me at <a href="mailto:shubhamyadav.70007@outlook.com" class="text-yellow-600 hover:underline">shubhamyadav.70007@outlook.com</a></code>
+                        <code class="text-emerald-500">Reach me at 
+                            <a href="mailto:shubhamyadav.70007@outlook.com" class="text-yellow-600 hover:underline">shubhamyadav.70007@outlook.com</a>
+                        </code>
                         <div class="inline-flex space-x-4 text-xl">
                             <a href="https://github.com/coderoo7/" class="hover:text-blue-600" target="_blank">
                                 <ion-icon name="logo-github"></ion-icon>
@@ -97,22 +98,138 @@
             </div>
         </section> -->
 
-        <section id="projects" class="bg-gray-50">
+        <section id="skills" class="bg-gray-50">
+            <div class="py-20 px-6 min-height-screen max-w-4xl mx-auto">
+                <header class="text-center">
+                    <h2 class="text-5xl text-gray-800 font-bold">My Skills</h2>
+                    <p class="pt-4">The skills I've gathered so far are listed as below. I believe in learning from
+                        mistakes and there's always room for improvement.</p>
+                </header>
+                <ul class="skills-list pt-16 grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+                    
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="logo-html5" class="text-8xl text-yellow-600"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">HTML5</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-3/4 bg-yellow-600"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="logo-css3" class="text-8xl text-blue-600"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">CSS3</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-3/5 bg-blue-600"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="logo-javascript" class="text-8xl text-yellow-300"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">JavaScript</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-4/6 bg-yellow-300"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="logo-react" class="text-8xl text-blue-400"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">React</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-2/5 bg-blue-400"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="logo-nodejs" class="text-8xl text-green-700"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">NodeJS</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-2/5 bg-green-700"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <ion-icon name="git-merge-outline" class="text-8xl text-yellow-800"></ion-icon>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">Git</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-8/12 bg-yellow-800"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-white-50">
             <div class="py-20 px-6 min-height-screen max-w-4xl mx-auto">
                 <header class="text-center">
                     <h2 class="text-5xl text-gray-800 font-bold">Projects</h2>
-                    <p>Here are my some projects</p>
+                    <p class="pt-4">Here are my some projects</p>
                 </header>
                 <ul class="project-list pt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
                     <!-- Dynamically rendered -->
                 </ul>
             </div>
         </section>
+
+        <section id="resume" class="bg-gray-50">
+            <div class="py-20 px-6 min-height-screen max-w-4xl mx-auto">
+                <header class="text-center">
+                    <h2 class="text-5xl text-gray-800 font-bold">Resume</h2>
+                    <p class="pt-4">For those HR who are looking at my portfolio, you can download my resume for minimal information
+                        about me. 
+                    </p>
+                </header>
+                <div class="grid grid-cols-1 md:grid-cols-2 py-8">
+                    <a href="https://github.com/CoderOO7/portfolio/files/5791494/resume.pdf" class="relative flex hover-trigger" target="_blank">
+                        <img src="./assets/images/resume.png" class="h-60 w-full rounded-md shadow-md" alt="">
+                        <div class="absolute opacity-0 flex justify-center items-center rounded-md bg-black w-full h-full hover-target">
+                            <ion-icon name="link-outline" class="text-8xl text-white"></ion-icon>
+                        </div>
+                    </a>
+                    <div class="flex flex-grow items-center justify-center py-6">
+                        <a href="https://github.com/CoderOO7/portfolio/files/5791494/resume.pdf"
+                           target="_blank"
+                           class="px-8 py-4 bg-gradient-to-r from-cyan-400 to bg-emerald-600 text-white font-bold rounded-md shadow-md">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <footer id="footer">
+        <div class="bg-gray-800 p-4 w-full text-center text-white">
+            <small class="footer-copyright">&amp;2020</small>
+            <small class="footer-signature">Made by me the <em>CoderOO7</em></small>
+        </div>
+    </footer>
 
+    <!-- personal script -->
+    <script src="main.js"></script>
+
+    <!-- ionicons cdn script -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 
 </html>
