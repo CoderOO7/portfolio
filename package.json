@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack serve --content-base dist --mode=development",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "autoprefixer": "^10.2.0",
     "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
     "postcss": "^8.2.2",
     "postcss-loader": "^4.1.0",
     "style-loader": "^2.0.0",

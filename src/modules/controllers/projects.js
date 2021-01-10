@@ -1,4 +1,4 @@
-import {projectData} from "../data.js";
+import { projectData } from "../data.js";
 
 function projectFactory(
   title,
@@ -47,11 +47,9 @@ const projectController = (() => {
   }
 
   (function addSampleProjects() {
-
-    projectData.get().forEach(project=>{
+    projectData.get().forEach((project) => {
       addProject(project);
     });
-
   })();
 
   return {
