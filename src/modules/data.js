@@ -48,8 +48,8 @@ const data = (() => {
         description: `A simple sketch pad made using HTML5/CSS3, JavaScript(ES6) to improve
                         DOM manipulation skills.`,
         imagePath: "./assets/images/projects/etch-a-sketch.png",
-        liveLink: "https://coderoo7.github.io/todo-list/",
-        sourceCodeLink: "https://github.com/coderoo7/todo-list/",
+        liveLink: "https://coderoo7.github.io/Etch-A-Sketch/",
+        sourceCodeLink: "https://github.com/CoderOO7/Etch-A-Sketch",
       },
     ];
 
