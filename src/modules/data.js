@@ -2,6 +2,22 @@ const data = (() => {
   const projectData = (() => {
     const _staticProjectStore = [
       {
+        title: "Weather App",
+        description: `A weather web app created in Vanilla JavaScript using openWeather API. It provide you the
+                      current weather forecast for searched city. 
+                      `,
+        imagePath: "https://user-images.githubusercontent.com/67546884/106535542-58382280-64ee-11eb-8bdc-dd21ffcfcba6.png",
+        liveLink: "https://coderoo7.github.io/weather-app/",
+        sourceCodeLink: "https://github.com/CoderOO7/weather-app/",
+      },
+      {
+        title: "Gifs Gallery",
+        description: `Gifs Gallery is a small project created using giphy API to fetch the searched gifs. Made this project in vanilla JS to hone my api skills.`,
+        imagePath: "https://user-images.githubusercontent.com/67546884/106055358-29344200-60e5-11eb-88ba-4795dc9cf8eb.png",
+        liveLink: "https://coderoo7.github.io/gifs-gallery/",
+        sourceCodeLink: "https://github.com/coderoo7/gifs-gallery/",
+      },
+      {
         title: "TodoList",
         description: `A personal todolist web app with cloud support created
                          using Vanilla JavaScript(ES6).This project is build by taking account of solid principles and design patterns
@@ -26,6 +42,13 @@ const data = (() => {
         imagePath: "./assets/images/projects/tictactoe.png",
         liveLink: "https://coderoo7.github.io/TicTacToe/",
         sourceCodeLink: "https://github.com/CoderOO7/TicTacToe/",
+      },
+      {
+        title: "Restuarant Page",
+        description: `A restaurant page template that load the dynamic content to DOM, built using HTML5, CSS3, JavaScript ES6.`,
+        imagePath: "./assets/images/projects/restaurant.jpeg",
+        liveLink: "https://coderoo7.github.io/restaurant-page/",
+        sourceCodeLink: "https://github.com/coderoo7/restaurant-page/",
       },
       {
         title: "Digital Library",
