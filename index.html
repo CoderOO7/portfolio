@@ -9,7 +9,8 @@
     <!-- ionicons cdn scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
-    
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
     <!-- personal stylesheet -->
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
@@ -27,9 +28,9 @@
                 <div class="bg-card">
                 </div>
                 <div class="relative z-12 md:flex justify-between max-w-4xl bg-white p-4 rounded-md shadow-md">
-                    <div class="flex flex-col space-y-8 py-4">
+                    <div class="animate-fade-in-down flex flex-col space-y-8 py-4">
                         <header>
-                            <p class="text-lg">Hi, I am</p>
+                            <p class="text-lg">Hi <span class='animate-wave inline-block'>👋</span>, I am</p>
                             <h1 class="text-5xl font-bold text-gray-800">
                                 Shubham Yadav
                             </h1>
@@ -130,7 +131,18 @@
                             <div class="flex flex-col flex-grow justify-between">
                                 <h3 class="font-bold">Git</h3>
                                 <div class="flex w-full h-3 mb-6 bg-gray-400">
-                                    <div class="w-8/12 bg-yellow-800"></div>
+                                    <div class="w-1/2 bg-yellow-800"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="skill-list-item">
+                        <article class="flex justify-center content-between rounded-md shadow-md p-2">
+                            <i class="text-8xl devicon-webpack-plain colored"></i>
+                            <div class="flex flex-col flex-grow justify-between">
+                                <h3 class="font-bold">Webpack</h3>
+                                <div class="flex w-full h-3 mb-6 bg-gray-400">
+                                    <div class="w-2/5 bg-blue-500"></div>
                                 </div>
                             </div>
                         </article>
@@ -155,12 +167,12 @@
             <div class="py-20 px-6 min-h-screen max-w-4xl mx-auto">
                 <header class="text-center">
                     <h2 class="text-5xl text-gray-800 font-bold">Resume</h2>
-                    <p class="pt-4">For those HR who are looking at my portfolio, you can download my resume for minimal information
+                    <p class="pt-4 text-lg">For those HR who are looking at my portfolio, you can download my resume for minimal information
                         about me. 
                     </p>
                 </header>
                 <div class="grid grid-cols-1 md:grid-cols-2 mt-14">
-                    <a href="https://github.com/CoderOO7/portfolio/files/5791494/resume.pdf" class="relative flex hover-trigger" target="_blank">
+                    <a href="https://github.com/CoderOO7/host-assets/files/6234278/resume.pdf" class="relative flex hover-trigger" target="_blank">
                         <img src="https://user-images.githubusercontent.com/67546884/113033474-94030780-9180-11eb-8192-061087cda606.png" class="h-60 w-full object-cover rounded-md shadow-md" alt="">
                         <div class="absolute opacity-0 flex justify-center items-center rounded-md bg-black w-full h-full hover-target">
                             <ion-icon name="link-outline" class="text-8xl text-white transform rotate-45"></ion-icon>
