@@ -68,7 +68,8 @@ const data = (() => {
       {
         title: "Restuarant Page",
         description: `A restaurant page template that load the dynamic content to DOM, built using HTML5, CSS3, JavaScript ES6.`,
-        imagePath: "./assets/images/projects/restaurant.jpeg",
+        imagePath:
+          "https://user-images.githubusercontent.com/67546884/113101027-ba11c180-91eb-11eb-97dc-8c96f703a51d.jpg",
         liveLink: "https://coderoo7.github.io/restaurant-page/",
         sourceCodeLink: "https://github.com/coderoo7/restaurant-page/",
       },
