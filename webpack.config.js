@@ -38,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[chunkhash].css',
+      filename: 'assets/styles/[name].css',
       chunkFilename: '[id].[chunkhash].css'
     }),
     !isDev ? new CleanWebpackPlugin({}) : false,
