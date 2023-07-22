@@ -46,16 +46,16 @@ const data = (() => {
         liveLink: "https://coderoo7.github.io/todo-list/",
         sourceCodeLink: "https://github.com/coderoo7/todo-list/",
       },
-      {
-        title: "Foodshala",
-        description: `A restaurant web app portal that allow customers to order food from
-                        various restaurant stores and allow various restaurant store to sell their food items using this portal.
-                    `,
-        imagePath:
-          "https://user-images.githubusercontent.com/67546884/113033614-bd239800-9180-11eb-8438-7ec20c333d99.png",
-        liveLink: "https://foodshaalaa.herokuapp.com/",
-        sourceCodeLink: "https://github.com/coderoo7/foodshala/",
-      },
+      // {
+      //   title: "Foodshala",
+      //   description: `A restaurant web app portal that allow customers to order food from
+      //                   various restaurant stores and allow various restaurant store to sell their food items using this portal.
+      //               `,
+      //   imagePath:
+      //     "https://user-images.githubusercontent.com/67546884/113033614-bd239800-9180-11eb-8438-7ec20c333d99.png",
+      //   liveLink: "https://foodshaalaa.herokuapp.com/",
+      //   sourceCodeLink: "https://github.com/coderoo7/foodshala/",
+      // },
       {
         title: "TicTacToe",
         description: `An online TicTacToe(Noughts and Crosses) game with matrix look to give you some nerd
@@ -65,14 +65,14 @@ const data = (() => {
         liveLink: "https://coderoo7.github.io/TicTacToe/",
         sourceCodeLink: "https://github.com/CoderOO7/TicTacToe/",
       },
-      {
-        title: "Restuarant Page",
-        description: `A restaurant page template that load the dynamic content to DOM, built using HTML5, CSS3, JavaScript ES6.`,
-        imagePath:
-          "https://user-images.githubusercontent.com/67546884/113101027-ba11c180-91eb-11eb-97dc-8c96f703a51d.jpg",
-        liveLink: "https://coderoo7.github.io/restaurant-page/",
-        sourceCodeLink: "https://github.com/coderoo7/restaurant-page/",
-      },
+      // {
+      //   title: "Restuarant Page",
+      //   description: `A restaurant page template that load the dynamic content to DOM, built using HTML5, CSS3, JavaScript ES6.`,
+      //   imagePath:
+      //     "https://user-images.githubusercontent.com/67546884/113101027-ba11c180-91eb-11eb-97dc-8c96f703a51d.jpg",
+      //   liveLink: "https://coderoo7.github.io/restaurant-page/",
+      //   sourceCodeLink: "https://github.com/coderoo7/restaurant-page/",
+      // },
       {
         title: "Digital Library",
         description: `It's a sample CRUD web app allow you to add your favourite books and movies online,

@@ -9,8 +9,11 @@ module.exports = {
         6: "6px",
       },
       colors: {
+        ...colors,
         cyan: colors.cyan,
         emerald: colors.emerald,
+        lochmara: '#007acc',
+        'eastern-blue': '#2298BD',
       },
       keyframes: {
         wave: {
