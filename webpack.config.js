@@ -18,7 +18,7 @@ module.exports = {
   output: {
     filename: isDev ? '[name].[chunkhash].js' : '[name].js',
     path: paths.build,
-    publicPath: '/'
+    publicPath: './'
   },
   devtool: isDev ? 'inline-source-map' : false,
   devServer: {
