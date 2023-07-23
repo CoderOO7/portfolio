@@ -14,6 +14,7 @@ module.exports = {
         emerald: colors.emerald,
         lochmara: '#007acc',
         'eastern-blue': '#2298BD',
+        'alizarin-crimson': '#EA2D2E',
       },
       keyframes: {
         wave: {
