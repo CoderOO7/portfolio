@@ -3,8 +3,10 @@ import { projectController } from "./controllers/projects";
 const renderDOM = (() => {
   const projects = (() => {
     function list() {
+      const projectFragment = new DocumentFragment();
+      const projectListEl = document.querySelector(".project-list");
+      
       projectController.getProjects().forEach((project) => {
-        const projectListEl = document.querySelector(".project-list");
         const projectListItem = document.createElement("li");
         projectListItem.classList.add("project-list-item");
         projectListItem.innerHTML = `
@@ -25,9 +27,12 @@ const renderDOM = (() => {
                   </div>
             </article>`
         ;
-        projectListEl.append(projectListItem);
+        projectFragment.appendChild(projectListItem);
       });
+
+      projectListEl.appendChild(projectFragment);
     }
+
 
     return { list };
   })();
