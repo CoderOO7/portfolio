@@ -6,7 +6,7 @@ const data = (() => {
         description: `Kreditpay is a minimal loan management system build using MERN stack. It's an online platform where you as a customer can take a loan with ease.`,
         imagePath:
           "https://user-images.githubusercontent.com/67546884/113032972-02939580-9180-11eb-853e-a1fbe729e55c.jpg",
-        liveLink: "https://kreditpay.netlify.com/",
+        liveLink: "https://kreditpay.netlify.app/",
         sourceCodeLink: "https://github.com/CoderOO7/kreditpay/",
       },
       {
@@ -91,15 +91,15 @@ const data = (() => {
         liveLink: "https://coderoo7.github.io/Calculator/",
         sourceCodeLink: "https://github.com/CoderOO7/Calculator/",
       },
-      {
-        title: "Etch-A-Sketch",
-        description: `A simple sketch pad made using HTML5/CSS3, JavaScript(ES6) to improve
-                        DOM manipulation skills.`,
-        imagePath:
-          "https://user-images.githubusercontent.com/67546884/113033612-bbf26b00-9180-11eb-86c7-1b9f61d439a8.png",
-        liveLink: "https://coderoo7.github.io/Etch-A-Sketch/",
-        sourceCodeLink: "https://github.com/CoderOO7/Etch-A-Sketch",
-      },
+      // {
+      //   title: "Etch-A-Sketch",
+      //   description: `A simple sketch pad made using HTML5/CSS3, JavaScript(ES6) to improve
+      //                   DOM manipulation skills.`,
+      //   imagePath:
+      //     "https://user-images.githubusercontent.com/67546884/113033612-bbf26b00-9180-11eb-86c7-1b9f61d439a8.png",
+      //   liveLink: "https://coderoo7.github.io/Etch-A-Sketch/",
+      //   sourceCodeLink: "https://github.com/CoderOO7/Etch-A-Sketch",
+      // },
     ];
 
     function get() {
