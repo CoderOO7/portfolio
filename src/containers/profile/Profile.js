@@ -2,6 +2,7 @@ import React, {useState, useEffect, lazy, Suspense} from "react";
 import {openSource} from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
+import { BASE_URL } from "../../constants";
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
@@ -16,7 +17,7 @@ export default function Profile() {
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
       const getProfileData = () => {
-        fetch(`${process.env.PUBLIC_URL}/profile.json`)
+        fetch(`${BASE_URL}/profile.json`)
           .then(result => {
             if (result.ok) {
               return result.json();
