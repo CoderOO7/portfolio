@@ -197,8 +197,8 @@ const workExperiences = {
     },
     {
       role: "Software Development Engineer",
-      company: "Definitive HealthCare (Alias Analytical Wizards)",
-      companylogo: require("./assets/images/analyticalWizardsLogo.jpeg"),
+      company: "Definitive HealthCare (Analytical Wizards)",
+      companylogo: require("./assets/images/awLogo.png"),
       date: "Apr 2021 - Nov 2022",
       desc: "Contributed to a low-code platform enabling rapid dashboard development. Reduced development time from days to hours and improved system performance significantly."
     },
