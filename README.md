@@ -1,7 +1,45 @@
-## Portfolio
+# Shubham Yadav - Developer Portfolio 🚀
 
-It's my minimal portfolio created using HTML5/CSS3, JavaScript(ES6) and Tailwind CSS. Feel free to use it as a template for your own portfolio.
+A personal portfolio website showcasing my work, projects, and experience as a Backend-focused Full Stack Developer.
 
-### DEMO
+## 🌐 Live Demo
+[Visit Portfolio](https://coderoo7.github.io/portfolio)
 
-https://coderoo7.github.io/portfolio/
+---
+
+## ✨ Features
+
+- Clean and responsive UI
+- Projects and experience showcase
+- GitHub integration for open-source work
+- Performance-focused design
+- Easy to customize and extend
+
+---
+
+## 🛠️ Tech Stack
+
+- React
+- JavaScript / TypeScript
+- GraphQL
+- CSS / SCSS
+- GitHub APIs
+
+---
+
+## 📂 Project Structure
+
+- `src/portfolio.js` – Main content configuration
+- `src/components` – Reusable UI components
+- `src/containers` – Section-wise layouts
+- `public/` – Static assets
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/CoderOO7/portfolio/
+cd portfolio
+npm install
+npm start
