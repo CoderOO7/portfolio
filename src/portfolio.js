@@ -23,7 +23,7 @@ const greeting = {
   username: "CoderOO7",
   title: "Hi all, I'm Shubham",
   subTitle: emoji(
-    "Backend-focused Full Stack Developer 🚀 with 5+ years of experience building scalable microservices and high-performance web applications. I specialize in Node.js, React, Java and cloud-based architectures, with a strong focus on performance, reliability, and clean system design."
+    "Backend-focused Full Stack Developer 🚀 with 4.5+ years of experience building scalable microservices and high-performance web applications. I specialize in Node.js, React, Java and cloud-based architectures, with a strong focus on performance, reliability, and clean system design."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1FuS0km6VwneAomsmu1RLW6DXPMkfa1rI/view?usp=sharing", // Set to empty to hide the button
@@ -170,45 +170,45 @@ const workExperiences = {
       role: "Software Development Engineer",
       company: "Paypal",
       companylogo: require("./assets/images/paypalLogo.jpeg"),
-      date: "April 2025 – March 2026",
+      date: "2025 – 2026",
       desc: "Worked on backend systems powering device fingerprinting and authentication flows.Improved login success rate by 12% and reduced latency while enhancing CI/CD reliability and test coverage.",
       descBullets: []
     },
-    {
-      role: "Software Development Engineer",
-      company: "Nference",
-      companylogo: require("./assets/images/nferenceLogo.avif"),
-      date: "Oct 2025 – Dec 2025",
-      desc: "Contributed to frontend modernization by migrating from CRA to Vite. Improved build performance by 30% and enhanced overall developer experience."
-    },
+    // {
+    //   role: "Software Development Engineer",
+    //   company: "Nference",
+    //   companylogo: require("./assets/images/nferenceLogo.avif"),
+    //   date: "Oct 2025 – Dec 2025",
+    //   desc: "Contributed to frontend modernization by migrating from CRA to Vite. Improved build performance by 30% and enhanced overall developer experience."
+    // },
     {
       role: "Software Development Engineer",
       company: "Fuelbuddy",
       companylogo: require("./assets/images/fuelbuddyLogo.jpeg"),
-      date: "Sep 2023 – Sep 2024",
+      date: "2023 – 2024",
       desc: "Built and scaled backend microservices for KYC, analytics, and high-volume transactions. Improved processing efficiency by up to 60% and automated onboarding for 10,000+ users."
     },
     {
       role: "Software Development Engineer",
       company: "klubworks",
       companylogo: require("./assets/images/klubworksLogo.png"),
-      date: "Dec 2022 - Jul 2023",
+      date: "2022 - 2023",
       desc: "Optimized backend performance and reduced API response time from 1 minute to 150ms. Developed scalable systems for financial workflows and improved user onboarding experience."
     },
     {
       role: "Software Development Engineer",
       company: "Definitive HealthCare (Analytical Wizards)",
       companylogo: require("./assets/images/awLogo.png"),
-      date: "Apr 2021 - Nov 2022",
+      date: "2021 - 2022",
       desc: "Contributed to a low-code platform enabling rapid dashboard development. Reduced development time from days to hours and improved system performance significantly."
     },
-    {
-      role: "Software Development Engineer",
-      company: "Dresma",
-      companylogo: require("./assets/images/dresmaLogo.jpeg"),
-      date: "April 2020 – March 2021",
-      desc: "Built and optimized backend services for image processing and retail automation platforms.Improved system reliability and handled high-volume data workflows efficiently."
-    }
+    // {
+    //   role: "Software Development Engineer",
+    //   company: "Dresma",
+    //   companylogo: require("./assets/images/dresmaLogo.jpeg"),
+    //   date: "April 2020 – March 2021",
+    //   desc: "Built and optimized backend services for image processing and retail automation platforms.Improved system reliability and handled high-volume data workflows efficiently."
+    // }
   ]
 };
 
