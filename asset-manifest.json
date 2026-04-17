@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9adc898d.css",
-    "main.js": "/portfolio/static/js/main.21263b6a.js",
+    "main.css": "/portfolio/static/css/main.925b75ab.css",
+    "main.js": "/portfolio/static/js/main.6e49d035.js",
     "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
     "static/js/487.d8f8518d.chunk.js": "/portfolio/static/js/487.d8f8518d.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/portfolio/static/css/990.c6a7ee28.chunk.css",
@@ -13,18 +13,17 @@
     "static/media/developerActivity.svg": "/portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/dronacharyaLogo.jpg": "/portfolio/static/media/dronacharyaLogo.96f1d99d99246987fb14.jpg",
     "static/media/skill.svg": "/portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
-    "static/media/nferenceLogo.avif": "/portfolio/static/media/nferenceLogo.e696c28d8787f8657276.avif",
     "index.html": "/portfolio/index.html",
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.9adc898d.css.map": "/portfolio/static/css/main.9adc898d.css.map",
-    "main.21263b6a.js.map": "/portfolio/static/js/main.21263b6a.js.map",
+    "main.925b75ab.css.map": "/portfolio/static/css/main.925b75ab.css.map",
+    "main.6e49d035.js.map": "/portfolio/static/js/main.6e49d035.js.map",
     "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
     "487.d8f8518d.chunk.js.map": "/portfolio/static/js/487.d8f8518d.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/portfolio/static/css/990.c6a7ee28.chunk.css.map",
     "990.7bd7030f.chunk.js.map": "/portfolio/static/js/990.7bd7030f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9adc898d.css",
-    "static/js/main.21263b6a.js"
+    "static/css/main.925b75ab.css",
+    "static/js/main.6e49d035.js"
   ]
 }
