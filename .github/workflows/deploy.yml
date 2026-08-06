@@ -18,7 +18,7 @@ concurrency:
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.PAT }}
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: ""
 
