@@ -4,7 +4,7 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
-import { BASE_URL } from "../../constants";
+import {fetchProfileData} from "../../utils";
 
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
@@ -17,25 +17,15 @@ export default function Projects() {
   const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
-    const getRepoData = () => {
-      fetch(`${BASE_URL}/profile.json`)
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
+    const loadRepos = async () => {
+      const profile = await fetchProfileData();
+      if (profile) {
+        setrepoFunction(profile.pinnedItems.edges);
+      } else {
+        setrepoFunction("Error");
+      }
     };
-    getRepoData();
+    loadRepos();
   }, []);
 
   function setrepoFunction(array) {

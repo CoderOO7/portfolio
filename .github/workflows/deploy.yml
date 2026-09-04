@@ -21,6 +21,7 @@ env:
   REACT_APP_GITHUB_TOKEN: ${{ secrets.PAT }}
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: ""
+  PORTFOLIO_AI_API_URL: ${{ secrets.PORTFOLIO_AI_API_URL }}
 
 jobs:
   build-and-deploy:

@@ -21,6 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "CoderOO7",
+  name:"Shubham",
   title: "Hi all, I'm Shubham",
   subTitle: emoji(
     "Backend-focused Full Stack Developer 🚀 with 4.5+ years of experience building scalable microservices and high-performance web applications. I specialize in Node.js, React, Java and cloud-based architectures, with a strong focus on performance, reliability, and clean system design."
@@ -201,7 +202,7 @@ const workExperiences = {
       companylogo: require("./assets/images/awLogo.png"),
       date: "2021 - 2022",
       desc: "Contributed to a low-code platform enabling rapid dashboard development. Reduced development time from days to hours and improved system performance significantly."
-    },
+    }
     // {
     //   role: "Software Development Engineer",
     //   company: "Dresma",
