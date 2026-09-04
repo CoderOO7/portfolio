@@ -5,7 +5,7 @@ import ChatHeader from "./ChatHeader";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 import {fetchProfileData} from "../../utils";
-import {PORTFOLIO_AI_API_URL} from "../../constants";
+import { REACT_APP_PORTFOLIO_AI_API_URL } from "../../constants";
 
 import "./ChatBot.scss";
 
@@ -59,7 +59,7 @@ export default function ChatBot() {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${PORTFOLIO_AI_API_URL}/api/v1/chat`, {
+      const response = await fetch(`${ REACT_APP_PORTFOLIO_AI_API_URL }/api/v1/chat`, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({message: trimmed})
