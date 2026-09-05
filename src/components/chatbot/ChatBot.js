@@ -5,7 +5,8 @@ import ChatHeader from "./ChatHeader";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 import {fetchProfileData} from "../../utils";
-import { REACT_APP_PORTFOLIO_AI_API_URL } from "../../constants";
+import {REACT_APP_PORTFOLIO_AI_API_URL} from "../../constants";
+import {parseSSEStream} from "../../utils";
 
 import "./ChatBot.scss";
 
@@ -24,6 +25,7 @@ export default function ChatBot() {
   const [isLoading, setIsLoading] = useState(false);
   const [avatarUrl, setAvatarUrl] = useState("");
   const messagesEndRef = useRef(null);
+  const botMessageIdRef = useRef(null);
 
   useEffect(() => {
     const loadAvatar = async () => {
@@ -48,7 +50,7 @@ export default function ChatBot() {
     if (!trimmed || isLoading) return;
 
     const userMessage = {
-      id: Date.now(),
+      id: crypto.randomUUID(),
       text: trimmed,
       isUser: true,
       timestamp: new Date()
@@ -58,26 +60,52 @@ export default function ChatBot() {
     setInputValue("");
     setIsLoading(true);
 
+
     try {
-      const response = await fetch(`${ REACT_APP_PORTFOLIO_AI_API_URL }/api/v1/chat`, {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({message: trimmed})
-      });
+      const response = await fetch(
+        `${REACT_APP_PORTFOLIO_AI_API_URL}/api/v1/chat`,
+        {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({message: trimmed})
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to get response");
       }
 
-      const data = await response.json();
-      console.log("data----");
-      const botMessage = {
-        id: Date.now() + 1,
-        text: data.response || "No response received.",
-        isUser: false,
-        timestamp: new Date()
-      };
-      setMessages(prev => [...prev, botMessage]);
+      for await (const event of parseSSEStream(response.body)) {
+        if (event.type === "token") {
+          // create one bot message for entire stream
+          if (!botMessageIdRef.current) {
+            botMessageIdRef.current = crypto.randomUUID();
+            setMessages(prev => [
+              ...prev,
+              {
+                id: botMessageIdRef.current,
+                text: event.content,
+                isUser: false,
+                timestamp: new Date()
+              }
+            ]);
+            continue;
+          }
+
+          // append text for upcoming chunks
+          setMessages(prev =>
+            prev.map(msg =>
+              msg.id === botMessageIdRef.current
+                ? {...msg, text: msg.text + (event.content ?? "")}
+                : msg
+            )
+          );
+        }
+
+        if (event.type === "done") {
+          console.log("Stream completed");
+        }
+      }
     } catch (error) {
       console.error("Error fetching AI response:", error);
       setMessages(prev => [
@@ -91,6 +119,7 @@ export default function ChatBot() {
       ]);
     } finally {
       setIsLoading(false);
+      botMessageIdRef.current = null;
     }
   };
 

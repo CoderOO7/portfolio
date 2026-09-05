@@ -1,5 +1,7 @@
-import {openSource} from "./portfolio";
-import {BASE_URL} from "./constants";
+import {openSource} from "../portfolio";
+import {BASE_URL} from "../constants";
+
+export * from './sseStreamParser';
 
 export const formatFileSizeDisplay = value => {
   if (value < 1024) {
