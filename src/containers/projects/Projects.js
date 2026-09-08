@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, {useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
-import {fetchProfileData} from "../../utils";
+import {useAPI} from "../../hooks/useApi";
 
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
@@ -12,29 +12,20 @@ export default function Projects() {
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
+  const {
+    data: profile = {},
+    error: profileError,
+    submit: fetchProfile
+  } = useAPI("profile");
+  const repo = profile?.pinnedItems?.edges ?? [];
 
   useEffect(() => {
-    const loadRepos = async () => {
-      const profile = await fetchProfileData();
-      if (profile) {
-        setrepoFunction(profile.pinnedItems.edges);
-      } else {
-        setrepoFunction("Error");
-      }
-    };
-    loadRepos();
-  }, []);
+    fetchProfile();
+  }, [fetchProfile]);
 
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
+  if (openSource.display && !profileError && profile?.name) {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">

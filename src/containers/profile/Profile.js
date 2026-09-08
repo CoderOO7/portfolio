@@ -1,34 +1,35 @@
-import React, {useState, useEffect, lazy, Suspense} from "react";
+import React, {useEffect, lazy, Suspense} from "react";
 import {openSource} from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
-import {fetchProfileData} from "../../utils";
+import {useAPI} from "../../hooks/useApi";
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
-  function setProfileFunction(array) {
-    setrepo(array);
-  }
+  const {
+    data: profile = {},
+    error: profileError,
+    submit: fetchProfile
+  } = useAPI("profile");
 
   useEffect(() => {
-    const loadProfile = async () => {
-      const profile = await fetchProfileData();
-      setProfileFunction(profile || "Error");
-    };
-    loadProfile();
-  }, []);
+    if (openSource.showGithubProfile) {
+      fetchProfile();
+    }
+  }, [fetchProfile]);
+
   if (
     openSource.display &&
-    openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
+    openSource.showGithubProfile &&
+    !profileError &&
+    profile?.name
   ) {
     return (
       <Suspense fallback={renderLoader()}>
-        <GithubProfileCard prof={prof} key={prof.id} />
+        <GithubProfileCard prof={profile} />
       </Suspense>
     );
   } else {

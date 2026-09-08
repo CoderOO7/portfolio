@@ -20,7 +20,7 @@ export async function* parseSSEStream(stream) {
       }
     }
   } catch (e) {
-    console.error("Error on parsing SSE event ", e);
+    console.error("Error on parsing SSE stream ", e);
   } finally {
     reader.releaseLock();
   }

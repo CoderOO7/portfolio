@@ -1,4 +1,5 @@
 import React from "react";
+import {ChatAvatar} from "./ChatAvatar";
 
 export default function ChatHeader({username, avatarUrl, onClose, isDark}) {
   return (
@@ -8,7 +9,7 @@ export default function ChatHeader({username, avatarUrl, onClose, isDark}) {
       }
     >
       <div className="chatbot-header-info">
-        <img src={avatarUrl} alt={username} className="chatbot-header-avatar" />
+        <ChatAvatar src={avatarUrl} alt={username} />
         <div className="chatbot-header-text">
           <span className="chatbot-header-name">{username}</span>
           <span className="chatbot-header-subtitle">
